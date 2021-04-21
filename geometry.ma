@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: geometry.ma
-//Last modified: Wed, Apr 21, 2021 01:15:56 AM
+//Last modified: Wed, Apr 21, 2021 01:51:42 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "4.0.2.1";
@@ -78,6 +78,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "pSphere1";
 	rename -uid "695CE9BB-4D1B-1826-EB3F-58BB8073D209";
+	setAttr ".t" -type "double3" -391.34453327371432 52.002791026029115 12.784073881861133 ;
+	setAttr -av ".tx";
 createNode mesh -n "pSphereShape1" -p "pSphere1";
 	rename -uid "C02C3B0D-46EB-7ECA-2B6D-3F9A4C12CD0B";
 	setAttr -k off ".v";
@@ -220,8 +222,8 @@ createNode animCurveTL -n "pSphere1_translateX";
 	rename -uid "3A73D5D3-426C-3FAF-8F89-C18231BF6F16";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 209.13209677738519 10 -69.440203502433747
-		 20 -325.03731599688746 30 -523.16089576011518 40 -783.40739238514971;
+	setAttr -s 6 ".ktv[0:5]"  1 209.13209677738519 10 -69.440203502433747
+		 20 -325.03731599688746 30 -523.16089576011518 40 -783.40739238514971 98 -391.34453327371432;
 createNode animCurveTL -n "pSphere1_translateY";
 	rename -uid "05DA6084-4608-E05C-1E33-0DBBB36BE818";
 	setAttr ".tan" 18;
