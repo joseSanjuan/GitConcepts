@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: geometry.ma
-//Last modified: Tue, Apr 20, 2021 11:53:49 PM
+//Last modified: Wed, Apr 21, 2021 12:19:19 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "4.0.2.1";
@@ -133,19 +133,19 @@ createNode mesh -n "pTorusShape1" -p "pTorus1";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4553C485-41A4-0284-AD37-5692B4F86DA2";
+	rename -uid "A069547A-481A-1369-2297-BA843EC93540";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "BA41779F-4E38-D5E1-3CEE-22A48E5F61F5";
+	rename -uid "91D94B58-4B75-14C7-400A-F9BB5197A8E9";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "355F7835-444E-DBCD-CCE7-41B0466D9E19";
+	rename -uid "EE9DCED9-406A-4E2A-7C12-429FB880963D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "0F2E6B16-4641-0D46-3DC9-DAB8BE7BFB54";
+	rename -uid "5BA6C6E2-4279-4DA3-3268-B297702F9F91";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "040A4B7E-4EC7-F9C0-D068-959F126B8740";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "369886F8-4E95-2AA1-0D4F-88B875CC22BC";
+	rename -uid "B5BE0E94-4DBB-A163-5C56-0898033026BB";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BCE973F8-4DA2-C01B-7C93-888C82E13063";
 	setAttr ".g" yes;
